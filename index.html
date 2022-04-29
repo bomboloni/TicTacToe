@@ -10,7 +10,9 @@
 
 <body>
   <section class="controls">
-    <h1>Awesome Tic-Tac-Tow</h1>
+    <h1>Awesome Tic-Tac-Toe</h1>
+    <h2 id="winning"></h2>
+    
     <span class="startButton">
       New Game
     </span>
@@ -19,20 +21,37 @@
   
   <section class="board">
     <div class="row row1">
-      <div class="square square1 col1">
-        <span class="move">X</span></div>
-      <div class="square square2 col2"></div>
-      <div class="square square3 col3"></div>
+      <div id="boxOne" class="square colOne">
+        <span id="square1" class="move row1 col1 diag1 hasX">X</span>
+      </div>
+      <div id="boxTwo"class="square colTwo">
+        <span id="square2" class="move row1 col2 isEmpty"></span>
+      </div>
+      <div id="boxThree"class="square colThree">
+        <span id="square3" class="move row1 col3 diag2 isEmpty"></span>
+      </div>
     </div>
     <div class="row row2">
-    <div class="square square4 col1"></div>
-      <div class="square square5 col2"></div>
-      <div class="square square6 col3"></div>
+    <div id="boxFour" class="square colOne">
+      <span id="square4" class="move row2 col1 isEmpty"></span>
+    </div>
+      <div id="boxFive" class="square colTwo">
+        <span id="square5" class="move row2 col2 diag1 diag2 isEmpty"></span>
+      </div>
+      <div id="boxSix" class="square colThree">
+        <span id="square6" class="move row2 col3 isEmpty"></span>
+      </div>
     </div>
     <div class="row row3">
-    <div class="square square7 col1"></div>
-      <div class="square square8 col2"></div>
-      <div class="square square9 col3"></div>
+    <div id="boxSeven" class="square colOne">
+      <span cid="square7" class="move row3 col1 diag2 isEmpty"></span>
+    </div>
+      <div id="boxEight" class="square colTwo">
+        <span cid="square8" lass="move row3 col2 isEmpty"></span>
+      </div>
+      <div id="boxNine" class="square colThree">
+        <span id="square9" class="move row3 col3 diag1 isEmpty"></span>
+      </div>
     </div>
   </section>
   <script src="script.js"></script>
