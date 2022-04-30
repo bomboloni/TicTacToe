@@ -1,60 +1,43 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <section class="controls">
-    <h1>Awesome Tic-Tac-Toe</h1>
-    <h2 id="winning"></h2>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <span class="startButton">
-      New Game
-    </span>
-    <h3 class="whosturn"></h3>
-  </section>
-  
-  <section class="board">
-    <div class="row row1">
-      <div id="boxOne" class="square colOne">
-        <span id="square1" class="move row1 col1 diag1 hasX">X</span>
-      </div>
-      <div id="boxTwo"class="square colTwo">
-        <span id="square2" class="move row1 col2 isEmpty"></span>
-      </div>
-      <div id="boxThree"class="square colThree">
-        <span id="square3" class="move row1 col3 diag2 isEmpty"></span>
-      </div>
-    </div>
-    <div class="row row2">
-    <div id="boxFour" class="square colOne">
-      <span id="square4" class="move row2 col1 isEmpty"></span>
-    </div>
-      <div id="boxFive" class="square colTwo">
-        <span id="square5" class="move row2 col2 diag1 diag2 isEmpty"></span>
-      </div>
-      <div id="boxSix" class="square colThree">
-        <span id="square6" class="move row2 col3 isEmpty"></span>
-      </div>
-    </div>
-    <div class="row row3">
-    <div id="boxSeven" class="square colOne">
-      <span cid="square7" class="move row3 col1 diag2 isEmpty"></span>
-    </div>
-      <div id="boxEight" class="square colTwo">
-        <span cid="square8" lass="move row3 col2 isEmpty"></span>
-      </div>
-      <div id="boxNine" class="square colThree">
-        <span id="square9" class="move row3 col3 diag1 isEmpty"></span>
-      </div>
-    </div>
-  </section>
-  <script src="script.js"></script>
-</body>
+    <title>Blank Template</title>
 
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="playerTurn"></h1>
+    <div class="buttonContainer">
+      <button id="playAgain" class="hidden">play again</button>
+    </div>
+    <div class="container">
+      <button id="startButton">start</button>
+        <div class="board">
+        <!-- <div class="row row1">-->      
+          <span class="square square1"></span>
+          <span class="square square2"></span>
+          <span class="square square3"></span>
+        <!-- </div>
+        <div class="row row2"> -->
+          <span class="square square4"></span>
+          <span class="square square5"></span>
+          <span class="square square6"></span>
+        <!-- </div>
+        <div class="row row3"> -->
+          <span class="square square7"></span>
+          <span class="square square8"></span>
+          <span class="square square9"></span>
+        <!--</div>-->
+        </div>
+    </div>
+    <h2 id="resultsText"></h2>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
